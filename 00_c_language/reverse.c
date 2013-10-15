@@ -24,25 +24,25 @@ void reverse( char* pS )
 
 int main(int argc, char* argv[])
 {
-	char* pInput 	= NULL;
-	int   idx 		= 0;
+    char* pInput 	= NULL;
+    int   idx 		= 0;
 
-	if ( argc <= 1 )
+    if ( argc <= 1 )
     {
-		printf("[error] no input argument\n");
-		return 0;
+        printf("[error] no input argument\n");
+        return 0;
     }
 
-	for(idx=1; idx<argc; idx++)
-	{
-		pInput = argv[idx];
+    for(idx=1; idx<argc; idx++)
+    {
+        pInput = argv[idx];
 
-		printf("[info] original input 	= %s\n", pInput);
+        printf("[info] original input 	= %s\n", pInput);
 
-	    reverse(pInput);
+        reverse(pInput);
 
-		printf("[info] reverse input 	= %s\n", pInput);
-	}
+        printf("[info] reverse input 	= %s\n", pInput);
+    }
 
     return 0;
 }
